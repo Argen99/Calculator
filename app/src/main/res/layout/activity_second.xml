@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:text="Policies"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/sa_container"
+        app:layout_constraintStart_toStartOf="@+id/sa_container"
+        app:layout_constraintBottom_toTopOf="@+id/sa_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/sa_container"
+        android:layout_marginBottom="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/sa_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:text="Policy"
+            style="@style/SecondStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="Product Category"
+            style="@style/SecondStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="Origin Country"
+            style="@style/SecondStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="Brand"
+            style="@style/SecondStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sa_text_view"
+        android:text="Text"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/sa_btn"
+        app:layout_constraintEnd_toEndOf="@+id/sa_btn"
+        app:layout_constraintStart_toStartOf="@+id/sa_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sa_btn"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="12dp"
+        android:text="Button"
+        android:layout_margin="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
